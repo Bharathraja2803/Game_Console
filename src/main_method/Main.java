@@ -1,5 +1,6 @@
 package main_method;
 
+import console.DiceGame;
 import console.GameConsole;
 import console.ShooterGame;
 import pirate_game.PirateGame;
@@ -11,7 +12,11 @@ public class Main {
 //		int playerIndex = console.addPlayer();
 //		console.playGame(playerIndex);
 		
-		var console = new GameConsole<>(new PirateGame("The Sailer Man"));
+//		var console = new GameConsole<>(new PirateGame("The Sailer Man"));
+//		int playerIndex = console.addPlayer();
+//		console.playGame(playerIndex);
+		
+		var console = new GameConsole<>(new DiceGame("Dice Game"));
 		int playerIndex = console.addPlayer();
 		console.playGame(playerIndex);
 	}
